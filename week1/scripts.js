@@ -1,13 +1,13 @@
 let hongikFestival = {
-    name: "대동제",
-    date: "2026.05.13-2026.05.15",
-    location: "홍익대학교",
-    lineup: {
-        day1: ["다이나믹듀오", "드래곤포니"],
-        day2: ["백예린", "코르티스"],
-        day3: ["프로미스나인", "로꼬, 그레이, 우원재"]
-    }
-}
+  name: "대동제",
+  date: "2026.05.13-2026.05.15",
+  location: "홍익대학교",
+  lineup: {
+    day1: ["다이나믹듀오", "드래곤포니"],
+    day2: ["백예린", "코르티스"],
+    day3: ["프로미스나인", "로꼬, 그레이, 우원재"],
+  },
+};
 
 // 모든 section 태그를 찾는다.
 let sectionTag = document.querySelectorAll("section");
@@ -15,8 +15,7 @@ let sectionTag = document.querySelectorAll("section");
 //날짜 섹션에 추가
 let dateTag = document.createElement("p");
 dateTag.innerText = hongikFestival.date;
-sectionTag[0].appendChild(dateTag); 
-
+sectionTag[0].appendChild(dateTag);
 
 //라인업 섹션에 추가
 let h3Tag = document.querySelectorAll("h3");
@@ -47,7 +46,7 @@ h3Tag[1].after(baekYerinImg);
 
 let cortisTag = document.createElement("p");
 cortisTag.innerText = hongikFestival.lineup.day2[1];
-h3Tag[1].after(cortisTag);  
+h3Tag[1].after(cortisTag);
 let cortisImg = document.createElement("img");
 cortisImg.src = "cortis.jpg";
 cortisImg.alt = "코르티스";
@@ -68,6 +67,3 @@ let loccoImg = document.createElement("img");
 loccoImg.src = "locco-gray-woo.jpg";
 loccoImg.alt = "로꼬, 그레이, 우원재";
 h3Tag[2].after(loccoImg);
-
-
-
